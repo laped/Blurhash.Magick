@@ -11,14 +11,14 @@ public class BlurhasherTests
     {
         var result = Blurhasher.Decode(SourceHash, 200, 200);
 
-        var sourceImage = new MagickImage(@"Resources\Expectations\BlurResult1.png");
+        var sourceImage = new MagickImage(Path.Combine(AppContext.BaseDirectory, "Resources", "Expectations", "BlurResult1.png"));
         result.Signature.Should().Be(sourceImage.Signature);
     }
 
     [Fact]
     public void EncodingTests()
     {
-        var sourceImage = new MagickImage(@"Resources\Specimens\Sample.png");
+        var sourceImage = new MagickImage(Path.Combine(AppContext.BaseDirectory, "Resources", "Specimens", "Sample.png"));
 
         var result = Blurhasher.Encode(sourceImage, 9, 9);
 
