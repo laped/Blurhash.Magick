@@ -10,6 +10,7 @@
     <Authors>Lasse Bak Pedersen</Authors>
     <Description>A library for encoding and decoding Blurhash images using Magick.NET.</Description>
     <PackageTags>blurhash image preview compression encoding Magick.NET ImageMagick</PackageTags>
+    <PackageProjectUrl>https://github.com/laped/Blurhash.Magick</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 

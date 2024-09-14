@@ -1,0 +1,28 @@
+name: Release
+
+on: workflow_dispatch
+
+concurrency:
+  group: ${{ github.ref }}
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build -c Release
+
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+
+      - name: Package
+        run: dotnet pack -c Release
+
+      - name: Publish if version has changed
+        run: dotnet nuget push **/Release/*.nupkg -s https://www.nuget.org -k ${{ secrets.NUGET_API_KEY }} --skip-duplicate
