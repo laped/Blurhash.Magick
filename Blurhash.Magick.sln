@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blurhash.Magick.Test", "Blurhash.Magick.Test\Blurhash.Magick.Test.csproj", "{2353733C-F962-41D7-AFB2-617C409E5003}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blurhash.Magick", "Blurhash.Magick\Blurhash.Magick.csproj", "{16201F9D-121B-42AF-AADE-B00C3B3BF652}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2353733C-F962-41D7-AFB2-617C409E5003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2353733C-F962-41D7-AFB2-617C409E5003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2353733C-F962-41D7-AFB2-617C409E5003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2353733C-F962-41D7-AFB2-617C409E5003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16201F9D-121B-42AF-AADE-B00C3B3BF652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16201F9D-121B-42AF-AADE-B00C3B3BF652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16201F9D-121B-42AF-AADE-B00C3B3BF652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16201F9D-121B-42AF-AADE-B00C3B3BF652}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D94FDC3-C249-4146-BBD7-B669DA0E5844}
+	EndGlobalSection
+EndGlobal

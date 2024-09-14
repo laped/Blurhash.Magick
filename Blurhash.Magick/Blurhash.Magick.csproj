@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0;net8.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+
+    <PackageId>Blurhash.Magick</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Lasse Bak Pedersen</Authors>
+    <Description>A library for encoding and decoding Blurhash images using Magick.NET.</Description>
+    <PackageTags>blurhash image preview compression encoding Magick.NET ImageMagick</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blurhash.Core" Version="4.0.0" />
+    <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="14.0.0" />
+  </ItemGroup>
+  
+</Project>
