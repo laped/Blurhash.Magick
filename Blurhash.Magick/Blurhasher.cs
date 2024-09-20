@@ -39,17 +39,20 @@ public static class Blurhasher
         for (int y = 0; y < image.Height; y++)
         {
             var pcv = pixels.GetArea(0, y, image.Width, 1);
-            for (int x = 0; x < pcv.Length; x += channelsCount)
+            if (pcv != null)
             {
-                var r = pcv[x];
-                var g = pcv[x + 1];
-                var b = pcv[x + 2];
+                for (int x = 0; x < pcv.Length; x += channelsCount)
+                {
+                    var r = pcv[x];
+                    var g = pcv[x + 1];
+                    var b = pcv[x + 2];
 
-                var index = x / channelsCount;
-                ref var pixel = ref blurhashPixels[index, y];
-                pixel.Red = MathUtils.SRgbToLinear(r);
-                pixel.Green = MathUtils.SRgbToLinear(g);
-                pixel.Blue = MathUtils.SRgbToLinear(b);
+                    var index = x / channelsCount;
+                    ref var pixel = ref blurhashPixels[index, y];
+                    pixel.Red = MathUtils.SRgbToLinear(r);
+                    pixel.Green = MathUtils.SRgbToLinear(g);
+                    pixel.Blue = MathUtils.SRgbToLinear(b);
+                }
             }
         }
 #endif

@@ -12,11 +12,19 @@
     <PackageTags>blurhash image preview compression encoding Magick.NET ImageMagick</PackageTags>
     <PackageProjectUrl>https://github.com/laped/Blurhash.Magick</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Blurhash.Core" Version="4.0.0" />
     <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="14.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
   </ItemGroup>
-  
+
 </Project>
